@@ -66,13 +66,15 @@ let dog = {
   name: "Poofie",
   color: "blue",
   age: 24,
-  goodBoy = true,
+  goodBoy: true,
 }
+
+
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+let devMountainClassPet = dog.name;
 
 //////////////////PROBLEM 10////////////////////
 
@@ -83,7 +85,17 @@ let dog = {
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in
 
-// Code here
+function nameCheck(name) {
+  if (name == 'Steven'){
+    return ('What is up Steven?')
+  }
+    else if (name == 'Bryan'){
+      return ('Hey Bryan!');
+    }
+    else {
+      return ('Cool name, ' + name)
+    }
+}
 
 //////////////////PROBLEM 11////////////////////
 
@@ -91,12 +103,14 @@ let dog = {
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(number1, number2){
+  return (number1 + number2);
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+let mathSum = add(3,4);
 
 //////////////////PROBLEM 12////////////////////
 
@@ -107,7 +121,20 @@ let dog = {
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder(color) {
+  if (color == 'red') {
+    return ('red is a great color')
+  }
+  else if (color == 'green') {
+    return ('green is a solid favorite color');
+  }
+  else if (color == 'black'){
+    return ('so trendy');
+  }
+  else {
+    return ('you need to evaluate your favorite color choice');
+  }
+}
 
 //////////////////PROBLEM 13////////////////////
 
